@@ -4,6 +4,7 @@ import LogoContainer from "./components/LogoContainer"
 import Footer from "./components/Footer"
 import ListaPerguntas from "./components/ListaPerguntas"
 import { useState } from "react"
+import ResetStyle from "./globalStyles"
 
 export default function App() {
     let [respondeu , setRespondeu] =useState([0,0,0,0,0,0,0,0]);
@@ -11,6 +12,7 @@ export default function App() {
 
     return (
         <Container>
+            <ResetStyle />
             <LogoContainer/>
             <ListaPerguntas perguntas={perguntas} 
             respondeu={respondeu}
